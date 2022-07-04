@@ -1,6 +1,7 @@
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--card-gep-top));
-  margin-left: calc(-1 * var(--card-gep-left));
+  gap: 30px;
+  // margin-top: calc(-1 * var(--card-gep-top));
+  // margin-left: calc(-1 * var(--card-gep-left));
 }

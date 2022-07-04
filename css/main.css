@@ -34,9 +34,9 @@ ol {
 
 img {
   display: block;
-  /* width: 100%; */
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 body {
@@ -57,20 +57,27 @@ body {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
   /* Ширина по макету 1170+15+15 */
-  width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
 
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--card-gep-top));
-  margin-left: calc(-1 * var(--card-gep-left));
+  gap: 30px;
 }
 
 .card-item {
@@ -265,6 +272,12 @@ body {
   background-color: var(--background-button-color);
   border-radius: 4px;
   margin-bottom: 30px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .features-list__item::before {
+    width: 768px;
+  }
 }
 
 .icon-antenna::before {
@@ -533,8 +546,8 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section-worck {

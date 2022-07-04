@@ -8,6 +8,13 @@
   background-color: var(--background-button-color);
   border-radius: 4px;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100%-30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100%-90px) / 4);
+  }
 }
 .icon-antenna::before {
   background-image: url(../images/antenna.svg);
