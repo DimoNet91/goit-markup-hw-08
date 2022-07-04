@@ -1,0 +1,5 @@
+.card-item {
+  margin-top: var(--card-gep-top);
+  margin-left: var(--card-gep-left);
+  flex-basis: calc(100% / var(--card-item) - var(--card-gep-left));
+}
