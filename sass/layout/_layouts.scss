@@ -12,7 +12,13 @@
   letter-spacing: 0.03em;
 }
 .list-layouts {
-  --card-item: 3;
+  // --card-item: 3;
+  @include mq(tab) {
+    --card-item: 2;
+  }
+  @include mq(desk) {
+    --card-item: 3;
+  }
 }
 .layouts-item {
   background-color: var(--button-color);

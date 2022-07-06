@@ -101,9 +101,13 @@ body {
     --card-item: 2;
   }
 }
+@media screen and (min-width: 1200px) {
+  .card-set {
+    --card-item: 4;
+  }
+}
 
 .card-item {
-  flex-basis: calc(100% / var(--card-item) - var(--card-gep-left));
   flex-basis: calc((100% - (var(--card-item) - 1) * var(--card-gep-left)) / var(--card-item));
 }
 
@@ -197,11 +201,23 @@ body {
 
 .section-title {
   font-weight: 700;
-  font-size: 36px;
-  margin-bottom: 50px;
-  line-height: 1.16;
+  font-size: 28px;
+  margin-bottom: 30px;
+  line-height: 1.18;
   text-align: center;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .button-list__item {
@@ -488,9 +504,21 @@ body {
 
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 198px;
   background-color: var(--background-color);
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 198px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .overlay {
@@ -503,16 +531,28 @@ body {
 
 .hero-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-transform: uppercase;
   text-align: center;
   color: var(--button-color);
   margin-bottom: 30px;
-  max-width: 696px;
+  max-width: 360px;
   letter-spacing: 0.06em;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .hero-title {
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .features-list__item::before {
@@ -525,16 +565,6 @@ body {
   background-color: var(--background-button-color);
   border-radius: 4px;
   margin-bottom: 30px;
-}
-@media screen and (min-width: 768px) {
-  .features-list__item::before {
-    width: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .features-list__item::before {
-    width: calc((100% - 90px) / 4);
-  }
 }
 
 .icon-antenna::before {
@@ -557,9 +587,15 @@ body {
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
+  text-align: center;
   line-height: 1.14;
   color: var(--title-text-color);
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .features-list__title {
+    text-align: inherit;
+  }
 }
 
 .process-list {
@@ -588,6 +624,21 @@ body {
 
 .section-worck {
   padding-top: 0px;
+}
+@media screen and (min-width: 480px) {
+  .section-worck {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-worck {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-worck {
+    display: block;
+  }
 }
 
 .team-list__title {
@@ -626,25 +677,44 @@ body {
 }
 
 .clients {
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 33px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .clients {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
-.clients-list {
-  --card-item: 6;
+@media screen and (min-width: 480px) {
+  .clients-list {
+    --card-item: 2;
+  }
 }
 @media screen and (min-width: 768px) {
   .clients-list {
     --card-item: 3;
   }
 }
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    --card-item: 6;
+  }
+}
 
 .clients-icon-link {
-  width: 100%;
+  width: 210px;
   height: 92px;
   background-color: var(--button-color);
   display: flex;
@@ -656,6 +726,18 @@ body {
 }
 .clients-icon-link:hover, .clients-icon-link:focus {
   border: 1px solid var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .clients-icon-link {
+    width: 226px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-icon-link {
+    width: 170px;
+    height: 92px;
+  }
 }
 
 .clients-cpmany-icon {
@@ -795,8 +877,15 @@ body {
   letter-spacing: 0.03em;
 }
 
-.list-layouts {
-  --card-item: 3;
+@media screen and (min-width: 768px) {
+  .list-layouts {
+    --card-item: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-layouts {
+    --card-item: 3;
+  }
 }
 
 .layouts-item {

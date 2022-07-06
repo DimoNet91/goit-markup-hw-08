@@ -5,12 +5,15 @@
   @include mq(tab) {
     --card-item: 2;
   }
+  @include mq(desk) {
+    --card-item: 4;
+  }
   // margin-top: calc(-1 * var(--card-gep-top));
   // margin-left: calc(-1 * var(--card-gep-left));
 }
 .card-item {
   // margin-top: var(--card-gep-top);
   // margin-left: var(--card-gep-left);
-  flex-basis: calc(100% / var(--card-item) - var(--card-gep-left));
+  // flex-basis: calc(100% / var(--card-item) - var(--card-gep-left));
   flex-basis: calc((100% - ((var(--card-item) - 1) * var(--card-gep-left))) / var(--card-item));
 }

@@ -9,12 +9,12 @@
   border-radius: 4px;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 768px) {
-    width: calc((100% - 30px) / 2);
-  }
-  @media screen and (min-width: 1200px) {
-    width: calc((100% - 90px) / 4);
-  }
+  // @media screen and (min-width: 768px) {
+  //   width: calc((100% - 30px) / 2);
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   width: calc((100% - 90px) / 4);
+  // }
 }
 .icon-antenna::before {
   background-image: url(../images/antenna.svg);
@@ -32,7 +32,11 @@
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
+  text-align: center;
   line-height: 1.14;
   color: var(--title-text-color);
   margin-bottom: 10px;
+  @include mq(tab) {
+    text-align: inherit;
+  }
 }
