@@ -1,10 +1,12 @@
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  @include mq(desk) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
-.section-worck {
-  padding-top: 0px;
-}
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -12,11 +14,4 @@
   line-height: 1.16;
   text-align: center;
   color: var(--title-text-color);
-}
-.section-team {
-  background-color: var(--background-button-color);
-}
-.section-project {
-  margin-top: 94px;
-  margin-bottom: 94px;
 }

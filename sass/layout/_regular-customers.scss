@@ -8,6 +8,9 @@
 }
 .clients-list {
   --card-item: 6;
+  @include mq(tab) {
+    --card-item: 3;
+  }
 }
 
 .clients-icon-link {

@@ -2,6 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  @include mq(tab) {
+    --card-item: 2;
+  }
   // margin-top: calc(-1 * var(--card-gep-top));
   // margin-left: calc(-1 * var(--card-gep-left));
+}
+.card-item {
+  // margin-top: var(--card-gep-top);
+  // margin-left: var(--card-gep-left);
+  flex-basis: calc(100% / var(--card-item) - var(--card-gep-left));
+  flex-basis: calc((100% - ((var(--card-item) - 1) * var(--card-gep-left))) / var(--card-item));
 }
