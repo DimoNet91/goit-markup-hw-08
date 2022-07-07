@@ -244,9 +244,24 @@ body {
 
 .button-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: flex-start;
+  margin-bottom: 40px;
   column-gap: 8px;
+  row-gap: 15px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+@media screen and (min-width: 768px) {
+  .button-list {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-list {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .button-title {

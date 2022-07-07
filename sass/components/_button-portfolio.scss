@@ -23,10 +23,25 @@
 }
 
 .button-list {
+  // display: flex;
+  // justify-content: center;
+  // margin-bottom: 50px;
+  // column-gap: 8px;
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: flex-start;
+  margin-bottom: 40px;
   column-gap: 8px;
+  row-gap: 15px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  @include mq(tab) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @include mq(desk) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .button-title {
