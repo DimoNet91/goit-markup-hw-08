@@ -15,10 +15,8 @@
   }
 }
 .clients-list {
-  // --card-item: 6;
-  @include mq(mob) {
-    --card-item: 2;
-  }
+  --card-item: 2;
+
   @include mq(tab) {
     --card-item: 3;
   }
@@ -28,7 +26,6 @@
 }
 
 .clients-icon-link {
-  width: 210px;
   height: 92px;
   background-color: var(--button-color);
   display: flex;

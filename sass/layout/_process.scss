@@ -21,12 +21,7 @@
 }
 .section-worck {
   padding-top: 0px;
-  @include mq(mob) {
-    display: none;
-  }
-  @include mq(tab) {
-    display: none;
-  }
+  display: none;
   @include mq(desk) {
     display: block;
   }

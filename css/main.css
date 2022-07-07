@@ -211,6 +211,7 @@ body {
   .section-title {
     font-size: 28px;
     line-height: 1.18;
+    margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -520,13 +521,13 @@ body {
 .hero {
   text-align: center;
   padding-top: 118px;
-  padding-bottom: 198px;
-  background-color: var(--background-color);
+  padding-bottom: 118px;
+  background-position: center;
 }
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 118px;
-    padding-bottom: 198px;
+    padding-bottom: 118px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -537,24 +538,34 @@ body {
 }
 
 .overlay {
-  width: 480px;
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-bg-mob.jpg");
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-bg-mob-x2.jpg");
+  }
 }
 @media screen and (min-width: 768px) {
   .overlay {
-    width: 768px;
-    height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-bg-tab.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-bg-tab-x2.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .overlay {
-    width: 1600px;
-    height: 600px;
+    background-size: 1600px auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-bg-desk-x2.jpg");
   }
 }
 
@@ -653,16 +664,7 @@ body {
 
 .section-worck {
   padding-top: 0px;
-}
-@media screen and (min-width: 480px) {
-  .section-worck {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .section-worck {
-    display: none;
-  }
+  display: none;
 }
 @media screen and (min-width: 1200px) {
   .section-worck {
@@ -726,10 +728,8 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .clients-list {
-    --card-item: 2;
-  }
+.clients-list {
+  --card-item: 2;
 }
 @media screen and (min-width: 768px) {
   .clients-list {
@@ -743,7 +743,6 @@ body {
 }
 
 .clients-icon-link {
-  width: 210px;
   height: 92px;
   background-color: var(--button-color);
   display: flex;
