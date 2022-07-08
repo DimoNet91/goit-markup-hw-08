@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container header-nav">
         <a href="" lang="en" class="logo link">Web<span class="logo-black">Studio</span></a>
-        <nav class="">
+        <nav class="nav">
           <ul class="site-nav list">
             <li class="item">
               <a href="./index.html" class="link">Студия</a>
@@ -51,8 +51,53 @@
             >
           </li>
         </ul>
+        <button type="button" class="btn-menu-mob-op">
+          <svg class="menu-mob-logo" width="40" height="40">
+            <use href="./images/symbol-menu-mob.svg#icon-menu-mob"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden">
+        <div class="menu-container">
+          <div class="mob-menu-top">
+            <button type="button" class="btn-menu-mob-close">
+              <svg class="menu-close-logo" width="40" height="40">
+                <use href="./images/symbol-menu-close.svg#icon-close-mob-menu"></use>
+              </svg>
+            </button>
+            <nav class="mob-nav">
+              <ul class="mob-menu-nav list">
+                <li class="mob-menu-item">
+                  <a href="" class="mob-menu-link">Студия</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a href="./portfolio.html" class="mob-menu-link active">Портфолио</a>
+                </li>
+                <li class="mob-menu-item"><a href="" class="mob-menu-link">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mob-menu-bottom">
+            <ul class="mob-menu-auth-nav list">
+              <li class="mob-menu-item">
+                <a href="tel:+380961111111" class="mob-menu-auth-link active"> +38 096 111 11 11</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="mailto:info@devstudio.com" class="mob-menu-auth-mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-menu-soc-list list">
+              <li class="mob-menu-soc-item"><a href=""></a>Instagram</li>
+              <li class="mob-menu-soc-item"><a href=""></a>Twitter</li>
+              <li class="mob-menu-soc-item"><a href=""></a>Facebook</li>
+              <li class="mob-menu-soc-item"><a href=""></a>LinkedIn</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <!--Section button-portfolio--->
       <section class="section-project">
@@ -412,5 +457,6 @@
         </div>
       </div>
     </footer> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>

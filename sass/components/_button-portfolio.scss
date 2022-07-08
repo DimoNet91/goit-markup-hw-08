@@ -37,10 +37,12 @@
   @include mq(tab) {
     justify-content: center;
     margin-bottom: 30px;
+    margin-top: 60px;
   }
   @include mq(desk) {
     justify-content: center;
     margin-bottom: 50px;
+    margin-top: 94px;
   }
 }
 

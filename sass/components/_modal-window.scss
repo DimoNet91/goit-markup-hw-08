@@ -8,8 +8,14 @@
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  // width: 528px;
+  // height: 581px;
+  width: 450px;
+  height: 609px;
+  @include mq(desk) {
+    width: 528px;
+    height: 581px;
+  }
   background: var(--background-button-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -27,7 +33,10 @@
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
+  @include mq(desk) {
+    line-height: 23px;
+  }
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -119,6 +128,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  @include mq(desk) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
   &::before {
     content: '';
     width: 16px;
