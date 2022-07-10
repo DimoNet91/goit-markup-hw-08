@@ -5,6 +5,9 @@
   .logo {
     margin-bottom: 20px;
     justify-content: center;
+    @include mq(desk) {
+      justify-content: left;
+    }
   }
   .link:hover,
   .link:focus {
@@ -23,6 +26,9 @@
   text-transform: uppercase;
   color: var(--logo-white);
   margin-bottom: 20px;
+  @include mq(desk) {
+    text-align: left;
+  }
 }
 .join-label {
   margin-bottom: 20px;
@@ -60,12 +66,18 @@
 .address {
   color: var(--adress-color);
   font-style: inherit;
+  @include mq(desk) {
+    justify-content: left;
+  }
 }
 .address .link[target='blank'] {
   color: var(--button-color);
 }
 .address-item {
   margin-bottom: 9px;
+  @include mq(desk) {
+    text-align: left;
+  }
 }
 .footer-soc-list {
   display: flex;

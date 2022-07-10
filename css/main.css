@@ -986,6 +986,11 @@ body {
   margin-bottom: 20px;
   justify-content: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer .logo {
+    justify-content: left;
+  }
+}
 .footer .link:hover,
 .footer .link:focus {
   color: var(--accent-color);
@@ -1002,6 +1007,11 @@ body {
   text-transform: uppercase;
   color: var(--logo-white);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .join {
+    text-align: left;
+  }
 }
 
 .join-label {
@@ -1049,6 +1059,11 @@ body {
   color: var(--adress-color);
   font-style: inherit;
 }
+@media screen and (min-width: 1200px) {
+  .address {
+    justify-content: left;
+  }
+}
 
 .address .link[target=blank] {
   color: var(--button-color);
@@ -1056,6 +1071,11 @@ body {
 
 .address-item {
   margin-bottom: 9px;
+}
+@media screen and (min-width: 1200px) {
+  .address-item {
+    text-align: left;
+  }
 }
 
 .footer-soc-list {
