@@ -13,7 +13,6 @@
     @include mq(desk) {
       padding-top: 24px;
       padding-bottom: 25px;
-      margin-right: 93px;
     }
   }
 }
@@ -35,9 +34,6 @@
 }
 .site-nav .item:not(:last-child),
 .auth-nav .item:not(:last-child) {
-  @include mq(desk) {
-    margin-right: 50px;
-  }
 }
 .site-nav .link,
 .auth-nav .link {

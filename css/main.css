@@ -18,8 +18,7 @@
 
 .visually-hidden {
   position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0 !important;
   border: 0 !important;
@@ -247,6 +246,7 @@ body {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 40px;
+  margin-top: 60px;
   column-gap: 8px;
   row-gap: 15px;
   flex-wrap: wrap;
@@ -605,7 +605,6 @@ body {
   .page-header .logo {
     padding-top: 24px;
     padding-bottom: 25px;
-    margin-right: 93px;
   }
 }
 
@@ -628,13 +627,6 @@ body {
 .header-nav {
   display: flex;
   align-items: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .site-nav .item:not(:last-child),
-.auth-nav .item:not(:last-child) {
-    margin-right: 50px;
-  }
 }
 
 @media screen and (min-width: 768px) {
