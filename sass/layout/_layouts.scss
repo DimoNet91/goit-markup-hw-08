@@ -15,15 +15,18 @@
   // --card-item: 3;
   @include mq(tab) {
     --card-item: 2;
+    margin-bottom: 60px;
   }
   @include mq(desk) {
     --card-item: 3;
+    margin-bottom: 94px;
   }
 }
 .layouts-item {
   background-color: var(--button-color);
 }
 .layouts-link {
+  height: 100%;
   display: flex;
   flex-direction: column;
   transition: box-shadow var(--transition);
@@ -38,6 +41,7 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+  flex-grow: 1;
 }
 
 .layouts-thumb {

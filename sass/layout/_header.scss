@@ -10,6 +10,11 @@
     margin-right: 15px;
     padding-top: 16px;
     padding-bottom: 16px;
+    @include mq(desk) {
+      padding-top: 24px;
+      padding-bottom: 25px;
+      margin-right: 93px;
+    }
   }
 }
 .nav {
@@ -20,7 +25,7 @@
   }
   @include mq(desk) {
     display: flex;
-    margin-left: auto;
+    margin-left: 93px;
   }
 }
 
@@ -30,7 +35,9 @@
 }
 .site-nav .item:not(:last-child),
 .auth-nav .item:not(:last-child) {
-  margin-right: 50px;
+  @include mq(desk) {
+    margin-right: 50px;
+  }
 }
 .site-nav .link,
 .auth-nav .link {
@@ -51,6 +58,7 @@
 .site-nav {
   display: flex;
   align-items: center;
+  gap: 50px;
   color: var(--title-text-color);
 }
 .site-nav .link::after {
@@ -81,6 +89,7 @@
   }
   @include mq(desk) {
     display: flex;
+    flex-direction: row;
     margin-left: auto;
     align-items: center;
   }

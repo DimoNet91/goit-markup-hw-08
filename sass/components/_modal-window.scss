@@ -10,7 +10,8 @@
 .modal {
   // width: 528px;
   // height: 581px;
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   height: 609px;
   @include mq(desk) {
     width: 528px;
@@ -166,4 +167,7 @@
 }
 .input-wrap {
   position: relative;
+}
+.mailing-list {
+  display: flex;
 }

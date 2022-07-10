@@ -81,10 +81,12 @@
           <div class="mob-menu-bottom">
             <ul class="mob-menu-auth-nav list">
               <li class="mob-menu-item">
-                <a href="tel:+380961111111" class="mob-menu-auth-link active"> +38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="link mob-menu-auth-link active">
+                  +38 096 111 11 11</a
+                >
               </li>
               <li class="mob-menu-item">
-                <a href="mailto:info@devstudio.com" class="mob-menu-auth-mail"
+                <a href="mailto:info@devstudio.com" class="link mob-menu-auth-mail"
                   >info@devstudio.com</a
                 >
               </li>
@@ -191,20 +193,19 @@
             <li class="card-item team-list__item">
               <picture>
                 <source
-                  srcset="images/imgmin1.jpg 1x, images/imgmin1-x2.jpg 2x"
+                  srcset="images/imgmin1.jpg 1x, images/imgmin1-x2.jpg 2x" type="image/jpeg"
                   media="(min-widht: 1200px)"
                 />
                 <source
-                  srcset="images/imgmin1-tab.jpg 1x, images/imgmin1-tab-x2.jpg 2x"
+                  srcset="images/imgmin1-tab.jpg 1x, images/imgmin1-tab-x2.jpg 2x" type="image/jpeg"
                   media="(min-widht: 768px)"
                 />
                 <source
-                  srcset="images/imgmin1-mob.jpg 1x, images/imgmin1-mob-x2.jpg 2x"
-                  media="(min-widht: 320px)"
-                />
+                  srcset="images/imgmin1-mob.jpg 1x, images/imgmin1-mob-x2.jpg 2x" type="image/jpeg"
+                  media="(max-widht: 767px)"
+                  />
                 <img src="images/imgmin1-mob.jpg" alt="Фото Игорь Демьяненко" width="450" />
               </picture>
-
               <div class="team-list__con">
                 <h3 class="team-list__title">Игорь Демьяненко</h3>
                 <p lang="en" class="team-list__text">Product Designer</p>
@@ -239,16 +240,17 @@
             <li class="card-item team-list__item">
               <picture
                 ><source
-                  srcset="images/imgmin2.jpg 1x, images/imgmin2-x2.jpg 2x"
+                  srcset="images/imgmin2.jpg 1x, images/imgmin2-x2.jpg 2x" type="image/jpeg"
                   media="(min-widht: 1200px)"
-                />
+                                  />
                 <source
-                  srcset="images/imgmin2-tab.jpg 1x, images/imgmin2-tab-x2.jpg 2x"
+                  srcset="images/imgmin2-tab.jpg 1x, images/imgmin2-tab-x2.jpg 2x" type="image/jpeg"
                   media="(min-widht: 768px)"
-                />
+                                  />
                 <source
-                  srcset="images/imgmin2-mob.jpg 1x, images/imgmin2-mob-x2.jpg 2x"
-                  media="(min-widht: 320px)"
+                  srcset="images/imgmin2-mob.jpg 1x, images/imgmin2-mob-x2.jpg 2x" type="image/jpeg"
+                  media="(max-widht: 767px)"
+                  
                 />
                 <img src="images/imgmin2-mob.jpg" alt="Фото Ольга Репина" width="450" />
               </picture>
@@ -286,17 +288,18 @@
             <li class="card-item team-list__item">
               <picture
                 ><source
-                  srcset="images/imgmin3.jpg 1x, images/imgmin3-x2.jpg 2x"
+                  srcset="images/imgmin3.jpg 1x, images/imgmin3-x2.jpg 2x" type="image/jpeg"
                   media="(min-widht: 1200px)"
+                  type=""
                 />
                 <source
-                  srcset="images/imgmin3-tab.jpg 1x, images/imgmin3-tab-x2.jpg 2x"
+                  srcset="images/imgmin3-tab.jpg 1x, images/imgmin3-tab-x2.jpg 2x" type="image/jpeg"
                   media="(min-widht: 768px)"
-                />
+                                  />
                 <source
-                  srcset="images/imgmin3-mob.jpg 1x, images/imgmin3-mob-x2.jpg 2x"
-                  media="(min-widht: 320px)"
-                />
+                  srcset="images/imgmin3-mob.jpg 1x, images/imgmin3-mob-x2.jpg 2x" type="image/jpeg"
+                  media="(max-widht: 767px)"
+                                 />
                 <img src="images/imgmin3-mob.jpg" alt="Фото Николай Тарасов" width="450" />
               </picture>
 
@@ -334,17 +337,17 @@
             <li class="card-item team-list__item">
               <picture
                 ><source
-                  srcset="images/imgmin4.jpg 1x, images/imgmin4-x2.jpg 2x"
+                  srcset="images/imgmin4.jpg 1x, images/imgmin4-x2.jpg 2x" type="image/jpeg"
                   media="(min-widht: 1200px)"
-                />
+                                  />
                 <source
-                  srcset="images/imgmin4-tab.jpg 1x, images/imgmin4-tab-x2.jpg 2x"
+                  srcset="images/imgmin4-tab.jpg 1x, images/imgmin4-tab-x2.jpg 2x" type="image/jpeg"
                   media="(min-widht: 768px)"
-                />
+                                  />
                 <source
-                  srcset="images/imgmin4-mob.jpg 1x, images/imgmin4-mob-x2.jpg 2x"
-                  media="(min-widht: 320px)"
-                />
+                  srcset="images/imgmin4-mob.jpg 1x, images/imgmin4-mob-x2.jpg 2x" type="image/jpeg"
+                  media="(max-widht: 767px)"
+                                  />
                 <img src="images/imgmin4-mob.jpg" alt="ФотоМихаил Ермаков" width="450" />
               </picture>
 
@@ -576,11 +579,11 @@
               id="privacy"
             />
             <label for="privacy" class="checkbox-text"
-              >Соглашаюсь с рассылкой и принимаю
+              ><span class="mailing-list"> Соглашаюсь с рассылкой и принимаю
               <a href="" class="link"
                 ><span class="color-contract">Условия договора</span></a
               ></label
-            >
+            ></span>
           </div>
           <button type="submit" class="button">Отправить</button>
         </form>
