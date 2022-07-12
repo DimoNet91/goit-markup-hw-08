@@ -44,11 +44,12 @@
   // position: relative;
   // transition: color var(--transition);
   @include mq(tab) {
-    padding-top: 0;
-    padding-bottom: 0;
+    display: flex;
+    align-items: center;
   }
   @include mq(desk) {
     display: flex;
+    padding-left: 50px;
   }
 }
 .site-nav {
@@ -82,12 +83,16 @@
     flex-direction: column;
     gap: 10px;
     margin-left: auto;
+    font-size: 12px;
+    line-height: 1.16;
   }
   @include mq(desk) {
     display: flex;
     flex-direction: row;
     margin-left: auto;
     align-items: center;
+    font-size: 14px;
+    line-height: 1.14;
   }
   // display: flex;
   // margin-left: auto;
@@ -108,7 +113,6 @@
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
-  display: flex;
 }
 .auth-nav-logo,
 .auth-nav-logo {

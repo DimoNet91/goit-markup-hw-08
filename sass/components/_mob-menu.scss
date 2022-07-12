@@ -54,10 +54,7 @@
     overflow-y: auto;
   }
 }
-
-.mob-nav {
-}
-.mob-menu-nav {
+.mob-menu-top {
   margin-bottom: 40px;
 }
 .mob-menu-item:not(:last-child) {
@@ -105,10 +102,6 @@
   letter-spacing: 0.02em;
 }
 
-.mob-menu-auth-nav {
-}
-.mob-menu-auth-nav-logo {
-}
 .mob-menu-soc-item {
   font-weight: 500;
   font-size: 18px;

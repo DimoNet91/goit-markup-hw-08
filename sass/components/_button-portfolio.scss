@@ -30,20 +30,19 @@
   display: flex;
   justify-content: flex-start;
   margin-bottom: 40px;
-  margin-top: 60px;
   column-gap: 8px;
   row-gap: 15px;
   flex-wrap: wrap;
   flex-direction: row;
+  padding-top: 60px;
   @include mq(tab) {
     justify-content: center;
     margin-bottom: 30px;
-    margin-top: 60px;
+    padding-top: 60px;
   }
   @include mq(desk) {
     justify-content: center;
     margin-bottom: 50px;
-    margin-top: 94px;
   }
 }
 
